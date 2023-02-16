@@ -8,17 +8,15 @@
 </head>
 <body>
     <form action="" method="get">
-        Digite um caractere: <input type="text" name="carac"><br>
-        <button type="submit">Testar</button>
-    
+    Digite um número:<input type="number" name="number"><br>
+    <button type="submit">Testar</button>
     </form>
-
+    
     <?php
-    $meuCaractere = $_GET['carac'];
-    if (ctype_digit(($meuCaractere)))
-    echo "É dígito";
-    else
-    echo "Não é dígito";
+    $numero = $_GET['number'];
+
+    if ($numero % 2 == 0)
+    echo "$numero é ímpar";
     ?>
 </body>
 </html>
